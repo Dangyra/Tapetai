@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Reikiamų užsipirkti tapetų kiekio skaičiavimas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+	<div th:insert="fragments/navigation.html :: nav"></div>
+	<h1 class="text-center"><b>Sveiki atvykę į tapetų skaičiuoklės sistemą! </b></h1>
+	<h1 class="text-center"><b>Linkime Jums gero remonto :)</b></h1>
+	<div class="container justify-content-center">
+		<div class="row">
+			<div class="col-md-6 mt-5">
+				<div class="card text-center">
+					<div class="card-header text-center"> Tapetų skaičiuoklės sistemos paskirtis</div>
+					<div class="card-body" >
+						Reikiamų užsipirkti tapetų kiekio skaičiuoklės sistemos paskirtis yra suvedus kambario sienų ir jose esančių langų bei durų matmenis gauti tikslų reikiamų tapetų kiekį, taip pat gauti reikiamų nusipirkti tapetų rulonų kiekį. Ši sistema yra naudinga, kai yra norima ištapetuoti kambarį, leisdama aiškiai sužinoti reikiamą tapetų kiekį. Tokiu būdu yra nusiperkamas tapetų kiekis nėra per mažas, o jų perteklius yra minimizuojamas.
+							
+			
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 mt-5">
+				<div class="card text-center">
+					<div class="card-header text-center"> Tapetų skaičiuoklės sistema</div>
+					<div class="card-body">
+						Jei norite atlikti skaičiavimus paspauskite žemiau esantį mygtuką <br>
+						<a type="submit" class="btn btn-success" th:href="duom">Skaičiuoklė</a>
+					</div>
+					</div>
+				</div>				
+		</div>
+	</div>
+
+</body>
+</html>
+<style>
+.btn-success {
+    color: #fff;
+    background-color: grey;
+    border-color: grey;
+}
+h1{
+	color: white;
+}
+body{
+	background-image: url('image/wall8.jpg');
+	background-size: 100% 100%;
+  	height: 100vh;
+}
+</style>
