@@ -11,71 +11,149 @@
 	<h1 class="text-center" ><b>Reikiamų užsipirkti tapetų kiekio skaičiuoklė</b></h1>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 mt-5">
+			<div class="col-md-11 mt-4" style="width:62%">
 				<div class="card">
 					<div class="card-header">Įveskite duomenis</div>
 					<div class="card-body">
 						<form method="post" action="/duom">
-							<div class="mb-3">
-								<label name="s_kiekis">Įveskite norimų tapetuoti sienų skaičių</label>
-								<input type="number" name="s_kiekis" maxlength="4" size="4">
-								<table>
-									<th>Aukštis</th>
-									<th>Ilgis</th>
+						<table>
+						<th style="width:50%">
+						
+								<div class="mb-3">
+								<h5>Sienų išmatavimai:</h5>
+									<table>
+										<th></th>
+										<th>Aukštis</th>
+										<th>Ilgis</th>
+									
+										<tr>
+											<td>Siena 1</td>
+											<td><input type="text" name="s_aukstis1" th:value="0" maxlength="6" size="6"></td>
+											<td><input type="text" name="s_ilgis1" th:value="0" maxlength="6" size="6"></td>
+										</tr>
+									</table>
+									<table>
+										<th></th>
+										<th>Aukštis</th>
+										<th>Ilgis</th>
+									
+										<tr>
+											<td>Siena 2</td>
+											<td><input type="text" name="s_aukstis2" th:value="0" maxlength="6" size="6"></td>
+											<td><input type="text" name="s_ilgis2" th:value="0" maxlength="6" size="6"></td>
+										</tr>
+									</table>
+									<table>
+										<th></th>
+										<th>Aukštis</th>
+										<th>Ilgis</th>
+									
+										<tr>
+											<td>Siena 3</td>
+											<td><input type="text" name="s_aukstis3" th:value="0" maxlength="6" size="6"></td>
+											<td><input type="text" name="s_ilgis3" th:value="0" maxlength="6" size="6"></td>
+										</tr>
+									</table>
+									<table>
+										<th></th>
+										<th>Aukštis</th>
+										<th>Ilgis</th>
+									
+										<tr>
+											<td>Siena 4</td>
+											<td><input type="text" name="s_aukstis4" th:value="0" maxlength="6" size="6"></td>
+											<td><input type="text" name="s_ilgis4" th:value="0" maxlength="6" size="6"></td>
+										</tr>
+									</table>
+								</div>
 								
-									<tr>
-										<td><input type="text" name="s_aukstis" maxlength="16" size="16"></td>
-										<td><input type="text" name="s_ilgis" maxlength="16" size="16"></td>
-									</tr>
-								</table>			
-							</div>
-							<hr/>
-							<div class="mb-3">
-								<label name="d_kiekis">Įveskite tapetuojamose sienose esančių durų skaičių</label>
-								<input type="number" name="d_kiekis" maxlength="4" size="4"><br>
-								<table>
-									<th>Aukštis</th>
-									<th>Ilgis</th>
+								<div class="mb-3">
+									<h5>Durų išmatavimai:</h5>
+									<table>
+										<th></th>
+										<th>Aukštis</th>
+										<th>Ilgis</th>
+	
+										<tr>
+											<td>Durys 1</td>
+											<td><input type="text" name="d_aukstis1" th:value="0" maxlength="6" size="6"></td>
+											<td><input type="text" name="d_ilgis1" th:value="0" maxlength="6" size="6"></td>
+										</tr>
+									</table>
+									<table>
+										<th></th>
+										<th>Aukštis</th>
+										<th>Ilgis</th>
+									
+										<tr>
+											<td>Durys 2</td>
+											<td><input type="text" name="d_aukstis2" th:value="0" maxlength="6" size="6"></td>
+											<td><input type="text" name="d_ilgis2" th:value="0" maxlength="6" size="6"></td>
+										</tr>
+									</table>
+								</div>
+								</th>
+								<th style="width:0%">
+								</th>
+								<th style="width:60%">
+								<!-- <hr/> -->
+								<div class="mb-5">
+									<h5>Langų išmatavimai:</h5>
+									<table>
+										<th></th>
+										<th>Aukštis</th>
+										<th>Ilgis</th>
+									
+										<tr>
+											<td>Langas 1</td>
+											<td><input type="text" name="l_aukstis1" th:value="0" maxlength="6" size="6"></td>
+											<td><input type="text" name="l_ilgis1" th:value="0" maxlength="6" size="6"></td>
+										</tr>
+									</table>
+									<table>
+										<th></th>
+										<th>Aukštis</th>
+										<th>Ilgis</th>
+									
+										<tr>
+											<td>Langas 2</td>
+											<td><input type="text" name="l_aukstis2" th:value="0" maxlength="6" size="6"></td>
+											<td><input type="text" name="l_ilgis2" th:value="0" maxlength="6" size="6"></td>
+										</tr>
+									</table>
+									<table>
+										<th></th>
+										<th>Aukštis</th>
+										<th>Ilgis</th>
+									
+										<tr>
+											<td>Langas 3</td>
+											<td><input type="text" name="l_aukstis3" th:value="0" maxlength="6" size="6"></td>
+											<td><input type="text" name="l_ilgis3" th:value="0" maxlength="6" size="6"></td>
+										</tr>
+									</table>
+								</div>
 								
-									<tr>
-										<td><input type="text" name="d_aukstis" maxlength="16" size="16"></td>
-										<td><input type="text" name="d_ilgis" maxlength="16" size="16"></td>
-									</tr>
-								</table>
-							</div>
-							<hr/>
-							<div class="mb-3">
-								<label name="l_kiekis">Įveskite tapetuojamose sienose esančių langų skaičių</label>
-								<input type="number" name="l_kiekis" maxlength="4" size="4">
-								<table>
-									<th>Aukštis</th>
-									<th>Ilgis</th>
-								
-									<tr>
-										<td><input type="text" name="l_aukstis" maxlength="16" size="16"></td>
-										<td><input type="text" name="l_ilgis" maxlength="16" size="16"></td>
-									</tr>
-								</table>
-							</div>
-							<hr/>
-							<div class="mb-3">
-								<label class="form-label">Iveskite naudojamų tapetų rulono matmenis</label>								
-								<table>
-									<th>Aukštis</th>
-									<th>Ilgis</th>
-								
-									<tr>
-										<td><input type="text" name="t_aukstis" th:value="10.05" maxlength="16" size="16"></td>
-										<td><input type="text" name="t_ilgis" th:value="0.53" maxlength="16" size="16"></td>
-									</tr>
-								</table>
-							</div>
-							<button class="btn btn-success" type="submit">Skaičiuoti</button>
-						</form>
+								<div class="mb-3">
+									<label class="form-label"><h5>Iveskite naudojamų tapetų rulono matmenis</h5></label>								
+									<table>
+										<th>Aukštis</th>
+										<th>Ilgis</th>
+									
+										<tr>
+											<td><input type="text" name="t_aukstis" th:value="10.05" maxlength="6" size="6"></td>
+											<td><input type="text" name="t_ilgis" th:value="0.53" maxlength="6" size="6"></td>
+										</tr>
+									</table>
+								</div>
+								<button class="btn btn-secondary" type="submit">Skaičiuoti</button>
+							</form>
+						</th>
+						</table>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6 mt-5">
+			<div class="col-md-6 mt-4" style="width: 38%;">
 				<div class="card">
 					<div class="card-header"> Suskaičiuotas reikiamų tapetų kiekis </div>
 					<div class="card-body">
@@ -96,10 +174,8 @@
 </body>
 </html>
 <style>
-.btn-success {
-    color: #fff;
-    background-color: grey;
-    border-color: grey;
+table{
+	width:90%
 }
 h1{
 	color: white;
@@ -107,6 +183,6 @@ h1{
 body{
 	background-image: url('image/wall8.jpg');
 	background-size: 100% 100%;
-  	height: 110vh;
+  	height: 120vh;
 }
 </style>
