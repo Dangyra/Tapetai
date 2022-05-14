@@ -40,8 +40,11 @@ public class TapetaiController {
 			@RequestParam("t_ilgis") double t_ilgis, @RequestParam("t_aukstis") double t_aukstis) {
 	
 		double s_plotas = (s_ilgis1*s_aukstis1)+(s_ilgis2*s_aukstis2)+(s_ilgis3*s_aukstis3)+(s_ilgis4*s_aukstis4);
+		s_plotas=Math.round(s_plotas*100)/100.00;
 		double d_plotas = (d_ilgis1*d_aukstis1)+(d_ilgis2*d_aukstis2);
+		d_plotas=Math.round(d_plotas*100)/100.00;
 		double l_plotas = (l_ilgis1*l_aukstis1)+(l_ilgis2*l_aukstis2)+(l_ilgis3*l_aukstis3);
+		l_plotas=Math.round(l_plotas*100)/100.00;
 		double kiekis = s_plotas-d_plotas-l_plotas;
 		double t_kiekis = kiekis / (t_ilgis*t_aukstis);
 		t_kiekis=Math.round(t_kiekis*100)/100.0;
