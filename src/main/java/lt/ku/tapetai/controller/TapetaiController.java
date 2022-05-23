@@ -46,6 +46,7 @@ public class TapetaiController {
 		double l_plotas = (l_ilgis1*l_aukstis1)+(l_ilgis2*l_aukstis2)+(l_ilgis3*l_aukstis3);
 		l_plotas=Math.round(l_plotas*100)/100.00;
 		double kiekis = s_plotas-d_plotas-l_plotas;
+		kiekis=Math.round(kiekis*100)/100.0;
 		double t_kiekis = kiekis / (t_ilgis*t_aukstis);
 		t_kiekis=Math.round(t_kiekis*100)/100.0;
 		
